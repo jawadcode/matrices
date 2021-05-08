@@ -27,9 +27,8 @@ def multiply(A, B):
     """
     Use some list comprehension magic to multiply the matrices and get the result
     """
-    return [
-        [sum(x * y for x, y in zip(A_row, B_col)) for B_col in zip(*B)] for A_row in A
-    ]
+    return [[sum(x * y for x, y in zip(A_row, B_col)) for B_col in zip(*B)]
+            for A_row in A]
 
 
 def input_matrix(height):
