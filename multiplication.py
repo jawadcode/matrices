@@ -88,7 +88,7 @@ def format_matrix(matrix):
     s = [[str(e) for e in row] for row in matrix]
     lens = [max(map(len, col)) for col in zip(*s)]
     fmt = " ".join(f"{{:{x}}}" for x in lens)
-    return [" ｜ " + fmt.format(*row) + " ｜ " for row in s]
+    return [" | " + fmt.format(*row) + " | " for row in s]
 
 
 if __name__ == "__main__":
