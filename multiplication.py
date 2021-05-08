@@ -15,6 +15,7 @@ def main():
     width_b = int(input("width of B: "))
     if width_a != height_b:
         print("The width of matrix A must be equal to the height of matrix B")
+        exit(0)
 
     print(
         "\nPlease input matrix B the same way:"
