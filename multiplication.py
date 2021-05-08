@@ -1,5 +1,5 @@
 def main():
-    print("Matrix operations:\n\n")
+    print("Matrix multiplication program:\n\n")
 
     height_a = int(input("height of A: "))
     width_a = int(input("width of A: "))
