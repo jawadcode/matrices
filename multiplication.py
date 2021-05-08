@@ -11,11 +11,14 @@ def main():
     A = input_matrix(height_a)
     validate_matrix(height_a, width_a, A)
 
-    height_b = int(input("height of B: "))
+    height_b = int(input("\nheight of B: "))
     width_b = int(input("width of B: "))
     if width_a != height_b:
         print("The width of matrix A must be equal to the height of matrix B")
 
+    print(
+        "\nPlease input matrix B the same way:"
+    )
     B = input_matrix(height_b)
     validate_matrix(height_b, width_b, B)
 
